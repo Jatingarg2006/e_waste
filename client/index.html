@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Waste Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">♻️ E-Waste Intelligence</div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="tagline">MAKE YOUR DEVICE COUNT</p>
+
+                <h1>
+                    Don't throw it away.<br>
+                    <span>Find its next life.</span>
+                </h1>
+
+                <p class="description">
+                    Discover whether your old electronic device
+                    should be repaired, reused, donated, sold,
+                    or responsibly recycled.
+                </p>
+
+                <button id="startButton">
+                    Assess My Device →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="assessment" id="assessment">
+
+            <div class="section-heading">
+
+                <p class="tagline">DEVICE ASSESSMENT</p>
+
+                <h2>
+                    Tell us about your device
+                </h2>
+
+                <p>
+                    We'll use this information to determine
+                    the best next step.
+                </p>
+
+            </div>
+
+
+            <form id="deviceForm">
+
+                <div class="form-group">
+
+                    <label for="deviceType">
+                        What is the device?
+                    </label>
+
+                    <select id="deviceType" required>
+
+                        <option value="">
+                            Select a device
+                        </option>
+
+                        <option value="smartphone">
+                            Smartphone
+                        </option>
+
+                        <option value="laptop">
+                            Laptop
+                        </option>
+
+                        <option value="tablet">
+                            Tablet
+                        </option>
+
+                        <option value="television">
+                            Television
+                        </option>
+
+                        <option value="computer">
+                            Desktop Computer
+                        </option>
+
+                        <option value="monitor">
+                            Monitor
+                        </option>
+
+                        <option value="printer">
+                            Printer
+                        </option>
+
+                        <option value="headphones">
+                            Headphones / Earphones
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="brand">
+                        Brand
+                    </label>
+
+                    <input
+                        type="text"
+                        id="brand"
+                        placeholder="e.g. Dell, Apple, Samsung"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="age">
+                        How old is the device?
+                    </label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        min="0"
+                        max="50"
+                        placeholder="Years"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="condition">
+                        Current condition
+                    </label>
+
+                    <select id="condition" required>
+
+                        <option value="">
+                            Select condition
+                        </option>
+
+                        <option value="excellent">
+                            Works perfectly
+                        </option>
+
+                        <option value="good">
+                            Works with minor issues
+                        </option>
+
+                        <option value="damaged">
+                            Damaged but partially works
+                        </option>
+
+                        <option value="broken">
+                            Does not work
+                        </option>
+
+                    </select>
+
+                    <div class="form-group">
+                        <label for="problem">What is wrong with the device?</label>
+
+                        <select id="problem" required>
+                            <option value="">Select problem</option>
+                            <option value="none">No major problem</option>
+                            <option value="battery">Battery problem</option>
+                            <option value="screen">Screen/display problem</option>
+                            <option value="software">Software/performance problem</option>
+                            <option value="physical">Physical damage</option>
+                            <option value="charging">Charging/port problem</option>
+                            <option value="unknown">I don't know</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <button type="submit">
+                    Analyze My Device →
+                </button>
+
+            </form>
+
+            <div id="result" class="result-card"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
